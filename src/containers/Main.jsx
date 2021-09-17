@@ -5,8 +5,6 @@ import useCharacters from '../services/Characters';
 const Main = () => {
   const { loading, characters } = useCharacters();
 
-  console.log(characters);
-
   return loading ? <>Loading...</> : <List characters={characters} />;
 };
 
