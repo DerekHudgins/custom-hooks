@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import uuid from 'react-uuid';
+import styles from './styles/List.css';
 
 const List = ({ characters }) => {
   const characterList = characters.map((character) => {
@@ -12,7 +13,7 @@ const List = ({ characters }) => {
     );
   });
 
-  return <ul>{characterList}</ul>;
+  return <ul className={styles.List}>{characterList}</ul>;
 };
 
 List.propTypes = {

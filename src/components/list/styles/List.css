@@ -1,0 +1,22 @@
+.List {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+
+  li {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  li:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    margin: 10px;
+  }
+
+  img {
+    height: 40vh;
+  }
+}
