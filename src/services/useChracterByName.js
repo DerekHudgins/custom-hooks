@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 import fetchCharacterByName from '../utils/fetchCharacterByName';
 
-const useCharacterByName = ({ match }) => {
+const useCharacterByName = (name) => {
   const [loading, setLoading] = useState(true);
   const [character, setCharacter] = useState([]);
-  const name = match.params.name;
 
   useEffect(() => {
     fetchCharacterByName(name).then((character) => {
@@ -12,8 +11,6 @@ const useCharacterByName = ({ match }) => {
       setLoading(false);
     });
   }, []);
-
   return { loading, character };
 };
-
 export default useCharacterByName;
