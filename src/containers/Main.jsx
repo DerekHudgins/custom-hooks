@@ -14,6 +14,7 @@ const Main = () => {
       <Pagination
         activePage={activePage}
         totalItemsCount={801}
+        itemsCountPerPage={20}
         onChange={handleClick}
         firstPageText="first"
         lastPageText="last"
