@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemDetails component renders ItemDetails 1`] = `
+<DocumentFragment>
+  <main
+    class="ItemDetails"
+  >
+    <article>
+      pokemon
+    </article>
+    <img
+      alt="pokemon"
+    />
+    <section
+      class="details"
+    >
+      <p>
+        Height: 
+      </p>
+      <p>
+        Weight: 
+      </p>
+      <p>
+        Primary Type: 
+      </p>
+      <p>
+        Secondary Type: 
+      </p>
+      <p>
+        Pokebase: 
+      </p>
+    </section>
+  </main>
+</DocumentFragment>
+`;
