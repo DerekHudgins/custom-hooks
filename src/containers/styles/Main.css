@@ -1,19 +1,18 @@
 .Main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    list-style-type: none;
     font-family: 'Roboto Condensed', sans-serif;
   }
 
-  ul.pagination li {
+  ul > li {
     width: 50px;
     border: 1px solid #b9b0b0;
     display: flex;
@@ -27,33 +26,14 @@
     padding-bottom: 20px;
   }
 
-  ul.pagination li a {
+  ul > li > a {
     text-decoration: none;
     color: #337ab7;
     font-size: 20px;
   }
 
-  ul.pagination li.active a {
-    color: white;
-  }
-  ul.pagination li.active {
-    background-color: #337ab7;
-  }
-
-  ul.pagination li a:hover,
-  ul.pagination li a.active {
-    color: blue;
-  }
-
-  .page-selection {
-    width: 48px;
-    height: 30px;
-    color: #337ab7;
-  }
-
-  .pagination-wrapper {
+  a {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    align-items: center;
   }
 }

@@ -6,23 +6,24 @@ import styles from './styles/Main.css';
 
 const Main = () => {
   const { loading, characters, activePage, handleClick } = useCharacters();
-
+  
   return loading ? (
     <>Loading...</>
   ) : (
-    <section className={styles.Main}>
-      <Pagination
-        activePage={activePage}
-        totalItemsCount={801}
-        itemsCountPerPage={20}
-        onChange={handleClick}
-        firstPageText="first"
-        lastPageText="last"
-        prevPageText="prev"
-        nextPageText="next"
-      />
+    <>
+      <section className={styles.Main}>
+        <Pagination
+          activePage={activePage}
+          totalItemsCount={801}
+          onChange={handleClick}
+          firstPageText="first"
+          lastPageText="last"
+          prevPageText="prev"
+          nextPageText="next"
+        />
+      </section>
       <List characters={characters} />
-    </section>
+    </>
   );
 };
 
